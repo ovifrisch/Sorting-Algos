@@ -1,2 +1,1 @@
-# hello-world
-This is my first repository
+Hello world. 'Tis a strange one.
