@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-class MergeSort {
+class mergesort {
 	public static void main(String args[]) {
 		int x;
 		ArrayList<Integer> myArr = new ArrayList<Integer>();
