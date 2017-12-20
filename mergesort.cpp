@@ -32,7 +32,7 @@ template <class T>
 void mergesort(vector<T>& list, int start, int end) {
 	if (start >= end) return;
 	int middle = (start + end) / 2;
-	mergesort(list, 0, middle);
+	mergesort(list, start, middle);
 	mergesort(list, middle + 1, end);
 	merge(list, start, middle, middle + 1, end);
 }
