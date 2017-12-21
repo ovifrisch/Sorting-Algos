@@ -8,7 +8,7 @@ class mergesort {
 		myArr.add(4);
 		myArr.add(3);
 		mergeSort(myArr, 0, myArr.size() - 1);
-		printList(myArr);
+		print(myArr);
 	}
 
 	private static void mergeSort(List<?> list, int start, int end) {
@@ -46,7 +46,7 @@ class mergesort {
 		}
 	}
 
-	private static void printList(List<?> list) {
+	private static void print(List<?> list) {
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(list.get(i) + " ");
 		}
