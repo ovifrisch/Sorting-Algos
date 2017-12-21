@@ -11,7 +11,7 @@ class mergesort {
 		print(myArr);
 	}
 
-	private static void mergeSort(List<?> list, int start, int end) {
+	private static <T extends Comparable> void mergeSort(List<T> list, int start, int end) {
 		if (start >= end) return;
 		int middle = (start + end) / 2;
 		mergeSort(list, start, middle);
@@ -20,7 +20,7 @@ class mergesort {
 
 	}
 
-	private static <T> void merge(List<T> list, int leftStart, int leftEnd, int rightStart, int rightEnd) {
+	private static <T extends Comparable> void merge(List<T> list, int leftStart, int leftEnd, int rightStart, int rightEnd) {
 		int length = rightEnd - leftStart + 1;
 		int left = leftStart;
 		int right = rightStart;
@@ -33,7 +33,7 @@ class mergesort {
 			else if (left > leftEnd) {
 				temp.add(list.get(right++));
 			}
-			else if ((Integer)list.get(left) <= (Integer)list.get(right)) {
+			else if (list.get(left).compareTo(list.get(right)) <= 0) {
 				temp.add(list.get(left++));
 			}
 			else {
