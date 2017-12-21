@@ -7,7 +7,7 @@ void quicksort(vector<Comparable>& list, int left, int right) {
 	int start = left;
 	if (right <= left) return;
 
-	int pivot = list[left];
+	Comparable pivot = list[left];
 	vector<Comparable> newList;
 
 	for (int i = left + 1; i <= right; i++) {
