@@ -21,13 +21,7 @@ void print(int* list, int size) {
 }
 
 int main() {
-	int size = 5;
-	int arr[size];
-	arr[0] = 4;
-	arr[1] = 2;
-	arr[2] = 7;
-	arr[3] = 1;
-	arr[4] = 3;
-	insertionSort(arr, size);
-	print(arr, size);
+	int arr[5] = {4, 2, 7, 1, 3};
+	insertionSort(arr, 5);
+	print(arr, 5);
 }
