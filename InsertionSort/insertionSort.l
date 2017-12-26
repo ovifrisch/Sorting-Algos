@@ -1,0 +1,16 @@
+(defun insertionSort (l) 
+	(if (null l) 
+		l 
+		(insert (car l) (insertionSort (cdr l)))
+	)
+)
+
+(defun insert (item l) 
+	(if (null l) 
+		(list item)
+		(if (< item (car l)) 
+			(cons item l) 
+			(cons (car l) (insert item (cdr l)))
+		)
+	)
+)
