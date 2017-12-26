@@ -8,7 +8,7 @@ void merge(vector<T>& list, int leftStart, int leftEnd, int rightStart, int righ
 	vector<T> temp;
 	int left = leftStart;
 	int right = rightStart;
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i <= length; i++) {
 		if (left > leftEnd) {
 			temp.push_back(list[right++]);
 		}
@@ -23,14 +23,14 @@ void merge(vector<T>& list, int leftStart, int leftEnd, int rightStart, int righ
 		}
 	}
 
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i <= length; i++) {
 		list[leftStart++] = temp[i];
 	}
 }
 
 template <class T>
 void mergesort(vector<T>& list, int start, int end) {
-	if (start >= end) return;
+	if (end - start < 1) return;
 	int middle = (start + end) / 2;
 	mergesort(list, start, middle);
 	mergesort(list, middle + 1, end);
@@ -48,6 +48,6 @@ void printList(vector<T> list) {
 int main(int argc, char** argv) {
 	vector<int> list = {5, 4, 3, 7, 9, 1, 2};
 	vector<int> res;
-	mergesort(list, 0, list.size());
+	mergesort(list, 0, list.size() - 1);
 	printList(list);
 }
