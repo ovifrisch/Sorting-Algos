@@ -29,5 +29,4 @@ class bubbleSort {
 		}
 		System.out.println();
 	}
-
 }
