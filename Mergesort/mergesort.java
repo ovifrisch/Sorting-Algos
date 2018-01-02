@@ -2,7 +2,6 @@ import java.util.*;
 
 class mergesort {
 	public static void main(String args[]) {
-		int x;
 		ArrayList<Integer> myArr = new ArrayList<Integer>();
 		myArr.add(5);
 		myArr.add(4);
