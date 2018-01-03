@@ -12,7 +12,7 @@ void merge(int* list, int leftStart, int leftEnd, int rightStart, int rightEnd) 
 	int left = leftStart;
 	int right = rightStart;
 
-	for (int i = 0; i <= range; i++) {
+	for (int i = 0; i < range; i++) {
 		if (left > leftEnd) {
 			temp[i] = list[right++];
 		}
@@ -27,7 +27,7 @@ void merge(int* list, int leftStart, int leftEnd, int rightStart, int rightEnd) 
 		}
 	}
 
-	for (int i = 0; i <= range; i++) {
+	for (int i = 0; i < range; i++) {
 		list[leftStart++] = temp[i];
 	}
 }
