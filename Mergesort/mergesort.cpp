@@ -8,7 +8,7 @@ void merge(vector<T>& list, int leftStart, int leftEnd, int rightStart, int righ
 	vector<T> temp;
 	int left = leftStart;
 	int right = rightStart;
-	for (int i = 0; i <= length; i++) {
+	for (int i = 0; i < length; i++) {
 		if (left > leftEnd) {
 			temp.push_back(list[right++]);
 		}
@@ -23,7 +23,7 @@ void merge(vector<T>& list, int leftStart, int leftEnd, int rightStart, int righ
 		}
 	}
 
-	for (int i = 0; i <= length; i++) {
+	for (int i = 0; i < length; i++) {
 		list[leftStart++] = temp[i];
 	}
 }
