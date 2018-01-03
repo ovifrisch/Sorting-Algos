@@ -43,7 +43,7 @@ void print(vector<T> list) {
 }
 
 int main(int argc, char** argv) {
-	vector<int> list = {5, 9, 3, 7, 4, 1, 2, 13, 55};
+	vector<int> list = {3, 4, 5, 1, 2};
 	quicksort(list, 0, list.size() - 1);
 	print(list);
 }
