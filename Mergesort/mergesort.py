@@ -1,4 +1,6 @@
-
+import sys
+sys.path.append('../Test')
+from PythonTest import test
 
 def merge(a, b):
 	pos_a = pos_b = 0
@@ -27,8 +29,4 @@ def mergesort(lst):
 	return merge(mergesort(lst[0:idx]), mergesort(lst[idx:]))
 
 
-
-
-if __name__ == "__main__":
-	lst = [3, 6, 1, 3, 9, 6, 78, 32]
-	print(mergesort(lst))	
+print(test(mergesort))
